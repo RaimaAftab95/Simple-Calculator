@@ -61,7 +61,8 @@ function calculatePercentage()
  {
    try {
       //  const result = eval(expression) / 100;
-      const result = eval(expression + "* 0.01");
+      //const result = eval(expression + "* 0.01");
+      const result = (eval(expression) / 100).toString();
        output.textContent= result;
          // clear expression after calculating and displaying result 
          // to clear expression variable
@@ -72,6 +73,7 @@ function calculatePercentage()
       output.textContent = 'Error';
    }
 }
+
 
 // all clear expression and output
 function allClear()
