@@ -1,3 +1,5 @@
+//in this code i use try catch method to capture any error in calculation
+
 // gettinginput and  output class
 const output= document.querySelector(".output");
 const input= document.querySelector(".input");
@@ -23,12 +25,14 @@ if ((enterValue === '+' || enterValue === '-' ||enterValue === '*' || enterValue
      {
         return;
     } 
+
+
     else if (enterValue === '.' && lastChar === '.')
     {
        return;
     }
-// if(lastChar !== "." || enterValue !== ".")
-// to retain exp values enter before n latest
+
+
 
 else
 {
